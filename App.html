@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test App</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="box">
+        
+        <div class="status">
+            <p>Time:<span id="timer">60s</span></p>
+            
+        </div>
+        <h2>Typing Speed Test</h2>
+        <div class="quote"></div>
+        <textarea name="quote-input" id="quote-input" class="null" cols="30" rows="10"
+            placeholder="Type here when the test start.."></textarea>
+        <button id="start-test">Start Test</button>   
+        <button id="end-test">End Test</button>
+        
+        <div class="conditions">Rules: (*Please read before start your test)
+           <li>Maximum time limit is 60s.</li>
+           <li>Click 'Start Test' button to start your test.</li>
+           <li>Click 'End Test' or program ended once 0s is reached.</li> 
+           <li>Result will be populated automatically after test completion.</li>          
+        </div> 
+        
+        <div class="result">
+            <span id="res">Results:</span>
+           
+            <p>Mistakes & Incomplete:<span id="mistake">0</span></p>
+            <p>speed:<span id="speed">rpm</span></p>
+            <p>Accuracy:<span id="accuracy">%</span></p>
+
+        </div>
+        <button id="reset">Reset</button>
+    
+    
+    </div>
+    
+</body>
+<script src="Scripts.js"></script>
+</html>
